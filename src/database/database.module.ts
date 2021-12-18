@@ -5,7 +5,6 @@ const providers = [
     ...databaseProvider,
     ...UserProvider
 ];
-
 @Module({
     providers: providers,
     exports: providers
