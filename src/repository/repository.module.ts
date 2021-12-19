@@ -1,8 +1,13 @@
 import { Module } from "@nestjs/common";
-const repositories = [];
+import { DatabaseModule } from "src/database/database.module";
+import { UserRepository } from "./repos/user.repository";
+const repositories = [
+    UserRepository
+];
 
 @Module({
-    imports: repositories,
+    imports: [DatabaseModule],
+    providers: repositories,
     exports: repositories
 })
 export class RepositoryModule {}

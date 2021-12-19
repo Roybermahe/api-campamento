@@ -13,7 +13,7 @@ export const databaseProvider = [
             username: 'root',
             password: '',
             database: 'camp_db',
-            entities: ['./distcl/**/**/*.entity{.js,.ts}'],
+            entities: ['./dist/**/**/*.entity{.js,.ts}'],
             synchronize: true // OJO: solo usar en desarollo no en producción
         }),
     },
